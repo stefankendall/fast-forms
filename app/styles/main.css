@@ -1,3 +1,13 @@
 body {
-  padding: 20px;
+  padding: 0.5rem;
+}
+
+button {
+  width: 120px;
+  height: 44px;
+  margin-bottom: 0.5rem;
+}
+
+button.last {
+  margin-bottom: 0;
 }
