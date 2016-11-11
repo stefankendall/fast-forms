@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "fast forms",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "fast forms",
+    "description": "The description of the application"
+  }
+}
