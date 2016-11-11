@@ -2,7 +2,12 @@
 
 class PageManipulator {
   randomizeRadioInputs() {
-    console.log('randomizin');
+    let $radios = $('input[type=radio]');
+    let $radiosByName = _.groupBy($radios, 'name');
+    _.forEach($radiosByName, (values) => {
+      let selection = Math.floor(Math.random() * values.length);
+      $(values[selection]).prop('checked', true);
+    });
   }
 }
 

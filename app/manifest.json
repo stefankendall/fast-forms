@@ -30,6 +30,8 @@
         "https://*/*"
       ],
       "js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/lodash/dist/lodash.min.js",
         "scripts/contentscript.js"
       ],
       "run_at": "document_end",
