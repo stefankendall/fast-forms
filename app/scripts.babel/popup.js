@@ -14,6 +14,13 @@ window.randomizeRadioEntries = function () {
   });
 };
 
+window.showButtons = function(){
+  activeTab().then((tab) => {
+    chrome.tabs.sendMessage(tab.id, {action: 'showButtons'});
+  });
+};
+
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('radio-button').addEventListener('click', randomizeRadioEntries);
+  document.getElementById('show-buttons-button').addEventListener('click', showButtons);
 });
