@@ -9,10 +9,10 @@ class PageManipulator {
       $(values[selection]).prop('checked', true);
     });
 
-    let attentionPhrases = ['Please select'];
+    let attentionPhrases = ['Please select', 'Please answer', 'please select', 'please answer'];
     _.forEach(attentionPhrases, (phrase) => {
       $('*:contains(' + phrase + ')').each(function () {
-        if ($(this).children().length < 1) $(this).css({"font-size": "3rem", "color": "red"})
+        if ($(this).children().length < 1) $(this).css({'font-size': '3rem', 'color': 'red'})
       });
     });
   }
